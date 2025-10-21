@@ -1,11 +1,12 @@
-
+/* Default (mode terang) */
 body {
     background-color: #FFFFE0;
     font-family: Arial, sans-serif;
     color: #191970;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
+/* Kartu profil */
 .kartu-profil { 
     width: 300px;
     margin: 50px auto;
@@ -14,29 +15,30 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
-
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .kartu-profil img {
     width: 150px; 
     border-radius: 50%;
 }
-/* Mode terang (default) */
-body {
-  background-color: white;
-  color: black;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
 
 /* Mode gelap */
 body.dark-mode {
-  background-color: #121212;
-  color: white;
+    background-color: #121212;
+    color: #f0f0f0;
 }
 
-/* Gaya tombol (optional) */
+/* Ubah juga warna kartu saat gelap */
+body.dark-mode .kartu-profil {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+}
+
+/* Gaya tombol */
 button {
-  margin-top: 10px;
-  padding: 10px;
-  cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
 }
